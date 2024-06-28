@@ -390,7 +390,7 @@ public class CustomerOrder {
             public void run() {
                 try {
                     // URL of the PHP 
-                    URL url = new URL("http://localhost/GroupProject/db_connect.php");
+                    URL url = new URL("http://localhost/GroupProject/CustomerOrder.php");
 
                     // Establish a connection to the server
                     HttpURLConnection connection = (HttpURLConnection) url.openConnection();
