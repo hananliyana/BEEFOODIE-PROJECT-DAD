@@ -10,3 +10,8 @@ If everything looks good and the customer sends the order, they'll see a message
 But if something doesn't go as planned, the system will show a message telling the customer the order wasn't successful.
 
 Courier
+The Courier app helps delivery staff handle unfinished orders and bring their statuses up to date. 
+When someone starts the app, they can hit the "Display Incomplete Order" button to get and show a list of unfinished orders from a server. 
+The app displays the orders and their details in a text box. To mark an order as done, the courier types the Order ID into a text field and clicks the "Change Status" button. 
+This action sends a POST request to the server with the Order ID and updates the order's status to "complete." 
+The courier gets a success message if the update works or an error message if it doesn't.
