@@ -9,7 +9,6 @@ import java.awt.Font;
 import java.awt.Image;
 import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
 import java.awt.event.ActionEvent;
 
@@ -101,14 +100,14 @@ public class MainMenu {
             }
         });
         frame.getContentPane().add(btnNewButton);
-        
+
         JLabel lblNewLabel_2 = new JLabel("");
         lblNewLabel_2.setBounds(151, 36, 100, 100);
         frame.getContentPane().add(lblNewLabel_2);
-        //Resize image
+        // Resize image
         try {
-            BufferedImage img = ImageIO.read(new File("C:\\Users\\USER\\eclipse-workspace\\GroupProjectDAD\\src\\export202406272114333550.png"));
-            Image scaledImg = img.getScaledInstance(100, 100, Image.SCALE_SMOOTH); 
+            BufferedImage img = ImageIO.read(MainMenu.class.getResource("/Images/export202406272114333550.png"));
+            Image scaledImg = img.getScaledInstance(100, 100, Image.SCALE_SMOOTH);
             lblNewLabel_2.setIcon(new ImageIcon(scaledImg));
         } catch (IOException e) {
             e.printStackTrace();
