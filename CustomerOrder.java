@@ -18,7 +18,6 @@ import java.net.URL;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 import java.util.Random;
-
 import javax.swing.JOptionPane;
 import java.awt.Font;
 
@@ -52,12 +51,10 @@ public class CustomerOrder {
      * Create the application.
      */
     public CustomerOrder() {
-     
-            initialize();
-            // Generate the order ID upon application start
-            orderId = generateOrderId();
-            textField_1.setText(orderId); // Set Order ID in text field
-        
+        initialize();
+        // Generate the order ID upon application start
+        orderId = generateOrderId();
+        textField_1.setText(orderId); // Set Order ID in text field
     }
 
     /**
@@ -79,7 +76,7 @@ public class CustomerOrder {
         frame.getContentPane().add(lblNewLabel_1);
         // Resize image
         try {
-            BufferedImage img = ImageIO.read(new File("C:\\Users\\USER\\eclipse-workspace\\GroupProjectDAD\\src\\OIP (17).jpeg"));
+            BufferedImage img = ImageIO.read(CustomerOrder.class.getResource("/Images/OIP (17).jpeg"));
             Image scaledImg = img.getScaledInstance(100, 100, Image.SCALE_SMOOTH); 
             lblNewLabel_1.setIcon(new ImageIcon(scaledImg));
         } catch (IOException e) {
@@ -108,7 +105,7 @@ public class CustomerOrder {
         frame.getContentPane().add(lblNewLabel_3);
         // Resize image
         try {
-            BufferedImage img = ImageIO.read(new File("C:\\Users\\USER\\eclipse-workspace\\GroupProjectDAD\\src\\R (4).jpeg"));
+            BufferedImage img = ImageIO.read(CustomerOrder.class.getResource("/Images/R (4).jpeg"));
             Image scaledImg = img.getScaledInstance(100, 100, Image.SCALE_SMOOTH); 
             lblNewLabel_3.setIcon(new ImageIcon(scaledImg));
         } catch (IOException e) {
@@ -141,7 +138,7 @@ public class CustomerOrder {
         frame.getContentPane().add(lblNewLabel_6);
         // Resize image
         try {
-            BufferedImage img = ImageIO.read(new File("C:\\Users\\USER\\eclipse-workspace\\GroupProjectDAD\\src\\bubur.jpg"));
+            BufferedImage img = ImageIO.read(CustomerOrder.class.getResource("/Images/bubur.jpg"));
             Image scaledImg = img.getScaledInstance(100, 100, Image.SCALE_SMOOTH); 
             lblNewLabel_6.setIcon(new ImageIcon(scaledImg));
         } catch (IOException e) {
@@ -166,7 +163,7 @@ public class CustomerOrder {
         frame.getContentPane().add(lblNewLabel_7);
         // Resize image
         try {
-            BufferedImage img = ImageIO.read(new File("C:\\Users\\USER\\eclipse-workspace\\GroupProjectDAD\\src\\ayam gepok.jpg"));
+            BufferedImage img = ImageIO.read(CustomerOrder.class.getResource("/Images/ayam gepok.jpg"));
             Image scaledImg = img.getScaledInstance(100, 100, Image.SCALE_SMOOTH); 
             lblNewLabel_7.setIcon(new ImageIcon(scaledImg));
         } catch (IOException e) {
@@ -195,7 +192,7 @@ public class CustomerOrder {
         frame.getContentPane().add(lblNewLabel_9);
         // Resize image
         try {
-            BufferedImage img = ImageIO.read(new File("C:\\Users\\USER\\eclipse-workspace\\GroupProjectDAD\\src\\boba.jpg"));
+            BufferedImage img = ImageIO.read(CustomerOrder.class.getResource("/Images/boba.jpg"));
             Image scaledImg = img.getScaledInstance(100, 100, Image.SCALE_SMOOTH); 
             lblNewLabel_9.setIcon(new ImageIcon(scaledImg));
         } catch (IOException e) {
@@ -207,11 +204,11 @@ public class CustomerOrder {
         frame.getContentPane().add(lblNewLabel_10);
 
         JLabel lblNewLabel_24 = new JLabel("RM10");
-        lblNewLabel_24.setBounds(73, 414, 45, 13);
+        lblNewLabel_24.setBounds(83, 414, 45, 13);
         frame.getContentPane().add(lblNewLabel_24);
 
         JButton btnNewButton_2 = new JButton("Add To Cart");
-        btnNewButton_2.setBounds(44, 433, 118, 28);
+        btnNewButton_2.setBounds(44, 437, 118, 28);
         btnNewButton_2.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 addItemToCart("Boba Milk Tea", 10);
@@ -220,11 +217,11 @@ public class CustomerOrder {
         frame.getContentPane().add(btnNewButton_2);
 
         JLabel lblNewLabel_11 = new JLabel("");
-        lblNewLabel_11.setBounds(248, 283, 100, 100);
+        lblNewLabel_11.setBounds(248, 271, 100, 100);
         frame.getContentPane().add(lblNewLabel_11);
-        //Resize image
+        // Resize image
         try {
-            BufferedImage img = ImageIO.read(new File("C:\\Users\\USER\\eclipse-workspace\\GroupProjectDAD\\src\\kopi o.png"));
+            BufferedImage img = ImageIO.read(CustomerOrder.class.getResource("/Images/kopi o.png"));
             Image scaledImg = img.getScaledInstance(100, 100, Image.SCALE_SMOOTH); 
             lblNewLabel_11.setIcon(new ImageIcon(scaledImg));
         } catch (IOException e) {
@@ -232,71 +229,66 @@ public class CustomerOrder {
         }
 
         JLabel lblNewLabel_12 = new JLabel("Kopi O");
-        lblNewLabel_12.setBounds(274, 376, 52, 37);
+        lblNewLabel_12.setBounds(264, 384, 60, 13);
         frame.getContentPane().add(lblNewLabel_12);
-
 
         JLabel lblNewLabel_25 = new JLabel("RM3");
         lblNewLabel_25.setBounds(274, 414, 45, 13);
         frame.getContentPane().add(lblNewLabel_25);
 
         JButton btnNewButton_3 = new JButton("Add To Cart");
-        btnNewButton_3.setBounds(234, 433, 118, 28);
+        btnNewButton_3.setBounds(234, 437, 118, 28);
         btnNewButton_3.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                addItemToCart("Kopi O", 3);
+                addItemToCart("Kopi O", 5);
             }
         });
         frame.getContentPane().add(btnNewButton_3);
 
         JLabel lblNewLabel_13 = new JLabel("");
-        lblNewLabel_13.setBounds(421, 283, 100, 100);
+        lblNewLabel_13.setBounds(421, 271, 100, 100);
         frame.getContentPane().add(lblNewLabel_13);
-        //Resize image
+        // Resize image
         try {
-            BufferedImage img = ImageIO.read(new File("C:\\Users\\USER\\eclipse-workspace\\GroupProjectDAD\\src\\teh o.jpeg"));
+            BufferedImage img = ImageIO.read(CustomerOrder.class.getResource("/Images/teh o.jpeg"));
             Image scaledImg = img.getScaledInstance(100, 100, Image.SCALE_SMOOTH); 
             lblNewLabel_13.setIcon(new ImageIcon(scaledImg));
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        
-
         JLabel lblNewLabel_14 = new JLabel("Teh O");
-        lblNewLabel_14.setBounds(454, 388, 45, 13);
+        lblNewLabel_14.setBounds(445, 384, 60, 13);
         frame.getContentPane().add(lblNewLabel_14);
 
         JLabel lblNewLabel_26 = new JLabel("RM3");
-        lblNewLabel_26.setBounds(454, 414, 45, 13);
+        lblNewLabel_26.setBounds(445, 414, 45, 13);
         frame.getContentPane().add(lblNewLabel_26);
 
         JButton btnNewButton_4 = new JButton("Add To Cart");
-        btnNewButton_4.setBounds(409, 433, 118, 28);
+        btnNewButton_4.setBounds(409, 437, 118, 28);
         btnNewButton_4.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                addItemToCart("Teh O", 3);
+                addItemToCart("Teh O", 5);
             }
         });
         frame.getContentPane().add(btnNewButton_4);
 
-        JLabel lblNewLabel_15 = new JLabel("Limau Ais");
-        lblNewLabel_15.setBounds(600, 388, 73, 16);
+        JLabel lblNewLabel_15 = new JLabel("");
+        lblNewLabel_15.setBounds(575, 271, 100, 100);
         frame.getContentPane().add(lblNewLabel_15);
-
-        JLabel lblNewLabel_16 = new JLabel("");
-        lblNewLabel_16.setBounds(575, 283, 100, 100);
-        frame.getContentPane().add(lblNewLabel_16);
-        //Resize image
+        // Resize image
         try {
-            BufferedImage img = ImageIO.read(new File("C:\\Users\\USER\\eclipse-workspace\\GroupProjectDAD\\src\\limau ais.jpg"));
+            BufferedImage img = ImageIO.read(CustomerOrder.class.getResource("/Images/limau ais.jpg"));
             Image scaledImg = img.getScaledInstance(100, 100, Image.SCALE_SMOOTH); 
-            lblNewLabel_16.setIcon(new ImageIcon(scaledImg));
+            lblNewLabel_15.setIcon(new ImageIcon(scaledImg));
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-
+        JLabel lblNewLabel_16 = new JLabel("Limau Ais");
+        lblNewLabel_16.setBounds(600, 384, 75, 13);
+        frame.getContentPane().add(lblNewLabel_16);
 
         JLabel lblNewLabel_27 = new JLabel("RM3");
         lblNewLabel_27.setBounds(610, 414, 45, 13);
@@ -403,7 +395,7 @@ public class CustomerOrder {
                     data.append("&Name=").append(URLEncoder.encode(customerName, "UTF-8"));
                     data.append("&Quantity=").append(URLEncoder.encode(String.valueOf(totalQuantity), "UTF-8"));
                     data.append("&Price=").append(URLEncoder.encode(String.valueOf(totalPrice), "UTF-8"));
-                    data.append("&Status=").append(URLEncoder.encode("uncompleted", "UTF-8"));
+                    data.append("&Status=").append(URLEncoder.encode("incomplete", "UTF-8"));
 
                     // Write the data to the connection
                     try (OutputStream outputStream = connection.getOutputStream()) {
