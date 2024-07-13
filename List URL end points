@@ -1,4 +1,0 @@
-GET /GroupProject/BeeDelivery.php
-POST /GroupProject/BeeDelivery.php
-POST /GroupProject/CustomerOrder.php
-GET /GroupProject/GetOrders.php
