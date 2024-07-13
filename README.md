@@ -12,3 +12,9 @@ Apps Involved
 Tables in Database
 
 In our gorup project we forms a database known as groupprojectdad and then populates it with one table, itemorder, which keeps information regarding item orders. The itemorder table has five columns: Order_ID (a primary key), Name, Quantity, Price and the ‘Status’ column that takes its default value to be 'incomplete'. 
+
+List URL end points
+1.	GET /GroupProject/BeeDelivery.php
+2.	POST /GroupProject/BeeDelivery.php
+3.	POST /GroupProject/CustomerOrder.php
+4.	GET /GroupProject/GetOrders.php
