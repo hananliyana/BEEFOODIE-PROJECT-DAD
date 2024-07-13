@@ -8,3 +8,7 @@ Apps Involved
 3. Courier
 
    The Courier app helps delivery staff handle unfinished orders and bring their statuses up to date. When someone starts the app, they can hit the "Display Incomplete Order" button to get and show a list of unfinished orders from a server. The app displays the orders and their details in a text box. To mark an order as done, the courier types the Order ID into a text field and clicks the "Change Status" button. This action sends a POST request to the server with the Order ID and updates the order's status to "complete." The courier gets a success message if the update works or an error message if it doesn't.
+
+Tables in Database
+
+In our gorup project we forms a database known as groupprojectdad and then populates it with one table, itemorder, which keeps information regarding item orders. The itemorder table has five columns: Order_ID (a primary key), Name, Quantity, Price and the ‘Status’ column that takes its default value to be 'incomplete'. 
