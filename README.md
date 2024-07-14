@@ -11,10 +11,14 @@ Apps Involved
 
 URL endpoints
 Customer Endpoints
+1.	Submit order: POST /GroupProject/CustomerOrder.php
+
 Courier Endpoints
+2.	Fetch incomplete order: GET /GroupProject/BeeDelivery.php
+3.	Update status order: POST /GroupProject/BeeDelivery.php
 
 Middleware Funtions/Features
-1. User Authentication:
+1. 
 
 Tables in Database
 
