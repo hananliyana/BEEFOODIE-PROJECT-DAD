@@ -10,6 +10,8 @@ Apps Involved
    The Courier app helps delivery staff handle unfinished orders and bring their statuses up to date. When someone starts the app, they can hit the "Display Incomplete Order" button to get and show a list of unfinished orders from a server. The app displays the orders and their details in a text box. To mark an order as done, the courier types the Order ID into a text field and clicks the "Change Status" button. This action sends a POST request to the server with the Order ID and updates the order's status to "complete." The courier gets a success message if the update works or an error message if it doesn't.
 
 URL endpoints
+https://github.com/hananliyana/BEEFOODIE-PROJECT-DAD/blob/590be09b99145710eaf066bfea67455306db170e/BeeDelivery.php
+
 Customer Endpoints
 1.	Submit order: POST /GroupProject/CustomerOrder.php
 
@@ -18,7 +20,9 @@ Courier Endpoints
 3.	Update status order: POST /GroupProject/BeeDelivery.php
 
 Middleware Funtions/Features
-1. 
+1. Submit order: Customer complete their order by clicking button "Submit Order".
+2. Fetch order: Courier fetch the incomplete order to be modified.
+3. Update status order: Courier update status order by complete once the delivery is done.
 
 Tables in Database
 
