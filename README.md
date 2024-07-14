@@ -20,9 +20,10 @@ Courier Endpoints
 3.	Update status order: POST /GroupProject/BeeDelivery.php
 
 Middleware Funtions/Features
-1. Submit order: Customer complete their order by clicking button "Submit Order".
-2. Fetch order: Courier fetch the incomplete order to be modified.
-3. Update status order: Courier update status order by complete once the delivery is done.
+1. Validates user authentication either as a customer or courier.
+2. Provides customer endpoints to view food menus and prices.
+3. Establish connection to the database once customer ordered.
+4. Fetch data from database to be modified by courier.
 
 Tables in Database
 
